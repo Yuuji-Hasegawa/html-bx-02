@@ -5,6 +5,10 @@
 
   --gutter: #{setting.f-space-px(l)};
 
+  &--no-gap {
+    gap: 0;
+  }
+
   &--gap-XL {
     --gutter: #{setting.f-space-px(xl)};
   }

@@ -19,3 +19,15 @@
   color: var(--c-text-body);
   background: var(--c-bg-qua);
 }
+
+.u-bg-day {
+  background: var(--c-day-mode);
+}
+
+.u-bg-night {
+  background: var(--c-night-mode);
+}
+
+.u-gray-filter {
+  filter: grayscale(100%);
+}

@@ -9,6 +9,10 @@
 
   gap: var(--gutter);
 
+  &--gap-one {
+    --gutter: 1rem;
+  }
+
   &--gap-XL {
     --gutter: #{setting.f-space-px(xl)};
   }
@@ -24,7 +28,8 @@
 
   &__narrow,
   &__bio-pict,
-  &__author-data {
+  &__author-data,
+  &__address-detail {
     flex-grow: 1;
   }
 
@@ -44,7 +49,8 @@
     flex-basis: 100px;
   }
 
-  &__author-data {
+  &__author-data,
+  &__address-detail {
     flex-basis: setting.breakpoints(unders);
   }
 
@@ -75,5 +81,9 @@
     &--news {
       text-align: left;
     }
+  }
+
+  &__address-heading {
+    flex-basis: 4rem;
   }
 }

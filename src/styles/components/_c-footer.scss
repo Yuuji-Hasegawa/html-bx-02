@@ -1,6 +1,15 @@
 @use "../settings" as setting;
 
 .c-footer {
-  position: sticky;
-  top: 100svh;
+  padding-right: clamp(
+    clamp(setting.f-space-px(m), setting.breakpoints(overm), setting.f-space-px(xl)),
+    setting.breakpoints(overs),
+    clamp(setting.f-space-px(xl), setting.breakpoints(overm), setting.f-space-px(3xl))
+  );
+  padding-left: clamp(
+    clamp(setting.f-space-px(m), setting.breakpoints(overm), setting.f-space-px(xl)),
+    setting.breakpoints(overs),
+    clamp(setting.f-space-px(xl), setting.breakpoints(overm), setting.f-space-px(3xl))
+  );
+  color: var(--c-text-on-fill);
 }

@@ -1,6 +1,10 @@
 @use "../settings" as setting;
 @use "../tools" as tool;
 
+.u-block-bottom {
+  margin-top: auto;
+}
+
 .u-block-left,
 .u-block-center {
   margin-right: auto;
@@ -29,4 +33,8 @@
 
 .u-full-width {
   width: 100%;
+}
+
+.u-display-block {
+  display: block;
 }

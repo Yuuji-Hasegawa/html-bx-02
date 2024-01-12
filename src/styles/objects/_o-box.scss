@@ -112,8 +112,6 @@
   &--thead {
     flex-basis: 260px;
     flex-grow: 1;
-    color: var(--c-text-description);
-    background: var(--c-bg-secondary);
     border-width: 1px clamp(0px, setting.breakpoints(underm), 1px) 0 1px;
 
     &:last-of-type {
@@ -130,6 +128,14 @@
     &:last-of-type {
       border-bottom-width: 1px;
     }
+  }
+
+  &--ghost-thead,
+  &--ghost-tbody {
+    padding-right: 0;
+    padding-left: 0;
+    border-right: 0;
+    border-left: 0;
   }
 
   &--input {
@@ -207,13 +213,29 @@
   }
 
   &--menu-btn {
+    margin-right: clamp(calc(-1 * setting.f-space-px(2xl)), setting.breakpoints(underm), 0px);
+    color: currentcolor;
     background: transparent;
-    border-color: var(--c-border-divider);
+    border-color: currentcolor;
+
+    &:hover,
+    &:focus {
+      background-color: color-mix(in oklab, transparent, map.get(setting.$sys-light, onContainer) 15%);
+      border-color: color-mix(in oklab, currentColor, map.get(setting.$sys-light, onContainer) 15%);
+    }
+
+    &:focus {
+      outline-color: currentcolor;
+    }
   }
 
   &--round-label {
     padding: setting.f-space-em(2xs) setting.f-space-em(s);
     border-color: transparent;
     border-radius: setting.f-font-emsize(m);
+  }
+
+  &--card {
+    border-color: var(--c-border-divider);
   }
 }

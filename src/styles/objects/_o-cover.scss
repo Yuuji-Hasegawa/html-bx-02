@@ -12,12 +12,18 @@
     margin-bottom: setting.f-space-px(m);
   }
 
+  /*
   & > :first-child:not(.o-cover__middle) {
     margin-top: 0;
   }
 
   & > :last-child:not(.o-cover__middle) {
     margin-bottom: 0;
+  }
+  */
+
+  &__bottom {
+    margin-top: auto;
   }
 
   &__middle {

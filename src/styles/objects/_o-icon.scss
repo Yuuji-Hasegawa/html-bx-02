@@ -10,8 +10,7 @@
     align-items: center;
   }
 
-  &--header-logo,
-  &--footer-logo {
+  &--header-logo {
     gap: setting.f-space-px(s);
     color: currentcolor;
     transition: all 0.25s ease;
@@ -53,6 +52,16 @@
       }
     }
   }
+
+  &--time-mark {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: setting.f-font-remsize(l);
+    aspect-ratio: 1/1;
+    color: var(--c-text-on-fill);
+    border-radius: setting.f-border-radius(s);
+  }
 }
 
 .o-icon {
@@ -64,14 +73,6 @@
       map.get(setting.$fontRemSize, 3xl),
       (setting.breakpoints(overm)),
       map.get(setting.$fontRemSize, 4xl)
-    );
-  }
-
-  .o-icon-parent--footer-logo & {
-    font-size: clamp(
-      map.get(setting.$fontRemSize, xl),
-      (setting.breakpoints(overm)),
-      map.get(setting.$fontRemSize, 2xl)
     );
   }
 

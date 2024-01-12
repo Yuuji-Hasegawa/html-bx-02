@@ -57,6 +57,14 @@
     }
   }
 
+  &--switch-r {
+    aspect-ratio: #{setting.f-aspect(wide)};
+
+    @include tool.min-screen(setting.$breakm) {
+      aspect-ratio: #{setting.f-aspect(skyscraper)};
+    }
+  }
+
   &--no-color {
     > * {
       filter: grayscale(100%);

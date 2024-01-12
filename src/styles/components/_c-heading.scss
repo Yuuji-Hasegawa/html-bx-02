@@ -106,3 +106,8 @@
     margin-top: setting.f-space-rem(m);
   }
 }
+
+.c-entry h2,
+.c-heading-border-bottom {
+  border-bottom: solid setting.f-space-rem(3xs) var(--c-border-divider);
+}
