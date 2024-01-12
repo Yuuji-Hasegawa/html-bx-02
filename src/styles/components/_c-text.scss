@@ -166,7 +166,7 @@
 }
 
 .c-switch-link {
-  color: var(--c-text-on-fill);
+  color: map.get(setting.$sys-light, surfaceContainerLowest);
 
   &:hover,
   &:focus {

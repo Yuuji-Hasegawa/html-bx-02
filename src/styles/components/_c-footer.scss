@@ -1,4 +1,5 @@
 @use "../settings" as setting;
+@use "sass:map";
 
 .c-footer {
   padding-right: clamp(
@@ -11,5 +12,5 @@
     setting.breakpoints(overs),
     clamp(setting.f-space-px(xl), setting.breakpoints(overm), setting.f-space-px(3xl))
   );
-  color: var(--c-text-on-fill);
+  color: map.get(setting.$sys-light, surfaceContainerLowest);
 }
